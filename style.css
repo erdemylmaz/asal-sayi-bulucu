@@ -1,0 +1,25 @@
+body {
+  background-color: #222222;
+  width: 95%;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+button {
+  background: white;
+  border: none;
+  border-radius: 2px;
+}
+
+button:focus {
+  outline: none;
+  border-radius: 2px;
+}
+
+input[type="submit"] {
+  background: white;
+  border-radius: 2px;
+}
