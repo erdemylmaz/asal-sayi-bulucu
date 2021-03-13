@@ -3,23 +3,54 @@ body {
   width: 95%;
   min-height: 95vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: gray;
+  font-size: 14px;
 }
 
-button {
-  background: white;
-  border: none;
-  border-radius: 2px;
-}
-
-button:focus {
-  outline: none;
-  border-radius: 2px;
+input[type="number"] {
+  min-width: 50px;
+  max-width: 75px;
+  font-size: 14px;
 }
 
 input[type="submit"] {
   background: white;
+  border: none;
   border-radius: 2px;
+  width: 50px;
+  height: 25px;
+}
+``
+input[type="submit"]:focus {
+  outline: none;
+  border-radius: 2px;
+}
+
+li {
+  list-style-type: decimal;
+  margin: 12px;
+}
+
+.number {
+  font-size: 30px;
+  color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.search {
+  margin-top: 36px;
 }
